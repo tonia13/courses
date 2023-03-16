@@ -25,7 +25,7 @@ class CoursesController extends AbstractRestfulController
 
      /**
      * @OA\Get(
-     *   path="/coursesProject/public/api/courses",
+     *   path="/courses/public/api/courses",
      *   summary="Get a list of courses",
      *   tags={"Courses"},
      *   @OA\Parameter(
@@ -94,7 +94,7 @@ class CoursesController extends AbstractRestfulController
     
      /**
      * @OA\Get(
-     *   path="/coursesProject/public/api/courses/{id}",
+     *   path="/courses/public/api/courses/{id}",
      *   summary="Get single course by id",
      *   @OA\Parameter(
      *     name="id",
@@ -144,7 +144,7 @@ class CoursesController extends AbstractRestfulController
 
      /**
      * @OA\Post(
-     *   path="/coursesProject/public/api/courses",
+     *   path="/courses/public/api/courses",
      *   summary="Create a new record",
      *   tags={"Courses"},
      *   @OA\RequestBody(
@@ -154,7 +154,8 @@ class CoursesController extends AbstractRestfulController
      *            @OA\Property(
      *               property="title",
      *               type="string",
-     *               maxLength= 50
+     *               example="Course title", 
+     *               maxLength=50
      *            ),
      *            @OA\Property(
      *               property="description",
@@ -215,7 +216,7 @@ class CoursesController extends AbstractRestfulController
 
      /**
      * @OA\Put(
-     *    path="/coursesProject/public/api/courses/{id}",
+     *    path="/courses/public/api/courses/{id}",
      *    summary="Update a course",
      *    tags={"Courses"},
      *    @OA\Parameter(
@@ -299,7 +300,7 @@ class CoursesController extends AbstractRestfulController
 
      /**
      * @OA\Delete(
-     *    path="/coursesProject/public/api/courses/{id}",
+     *    path="/courses/public/api/courses/{id}",
      *    summary="Delete a course by id",
      *    @OA\Parameter(
      *       name="id",
