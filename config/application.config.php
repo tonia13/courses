@@ -8,6 +8,8 @@
  * @see https://docs.laminas.dev/tutorials/advanced-config/#environment-specific-application-configuration
  */
 
+require_once __DIR__ . '/../propel/generated-conf/config.php';
+
 return [
     // Retrieve list of modules used in this application.
     'modules' => require __DIR__ . '/modules.config.php',
